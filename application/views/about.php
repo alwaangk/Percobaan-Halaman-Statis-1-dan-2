@@ -6,10 +6,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <title>Pemrograman Web Berbasis Framework</title>
 
-<link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
+<link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top">
@@ -25,8 +28,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="http://localhost:88/codeigniter">Beranda</a></li>
-        <li><a href="<?php echo site_url('welcome/about') ?>">Tentang Saya</a></li>
+        <li><a href="http://localhost:88/codeigniter">Beranda</a></li>
+        <li class="active"><a href="<?php echo site_url('welcome/about') ?>">Tentang Saya</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -41,23 +44,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="container">
   <div class="jumbotron">
-    <h1>Hello CodeIgniter + Bootstrap</h1>
+    <h1>About</h1>
     <p>
-      Consectetur unde eius ducimus esse obcaecati perferendis, ad
-      veritatis quo, nostrum! Dolor consequuntur assumenda quisquam eos
-      repellat Magni voluptates sed neque odio officiis? Laborum aliquid
-      obcaecati eaque sint error Nam.
-    </p>
-    <p>
-      <a class="btn btn-lg btn-primary"
-        href="http://getbootstrap.com/docs/3.3/" role="button">
-        Lihat Dokumentasi Bootstrap 3 &raquo;
-      </a>
-    </p>
-  </div>
+      <div class="container">
+  <a href="#" title="Biodata" data-toggle="popover" data-html=true data-content="
+      NIM : 1641720135 <br>
+      Nama : Alwan Ghozi Kurnia Amrullah
+      Gender : Laki-Laki <br>
+      Hobi : Bermusik">ABOUT ME</a><br>
+ 
 </div>
 
-<script src="<?php echo base_url('assets/js/jquery-3.3.1.min.js') ?>"></script>
-<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
+<script src="<? echo base_url('assets/js/jquery-3.3.1.min.js') ?>"></script>
+<script src="<? echo base_url('assets/js/bootstrap.min.js') ?>"></script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
 </body>
 </html>
